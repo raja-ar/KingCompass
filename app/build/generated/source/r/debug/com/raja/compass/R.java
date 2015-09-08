@@ -1718,7 +1718,6 @@ containing a value of this type.
         public static final int end_padder=0x7f0c006a;
         public static final int expand_activities_button=0x7f0c0026;
         public static final int expanded_menu=0x7f0c0036;
-        public static final int fab=0x7f0c0055;
         public static final int header=0x7f0c0050;
         public static final int home=0x7f0c0004;
         public static final int homeAsUp=0x7f0c000d;
@@ -1777,6 +1776,7 @@ containing a value of this type.
         public static final int time=0x7f0c0064;
         public static final int title=0x7f0c002b;
         public static final int title_template=0x7f0c002e;
+        public static final int toolbar=0x7f0c0055;
         public static final int topPanel=0x7f0c002d;
         public static final int up=0x7f0c0008;
         public static final int useLogo=0x7f0c0012;
