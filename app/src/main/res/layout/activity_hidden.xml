@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:id="@+id/btn_back"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Developer"
+        android:id="@+id/btn_abtdev"
+        android:background="@drawable/button"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btn_back"
+        android:layout_alignStart="@+id/btn_back" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Apps by Developer"
+        android:background="@drawable/button"
+        android:id="@+id/btn_devapps"
+        android:layout_below="@+id/btn_abtdev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp" />
+
+
+</RelativeLayout>

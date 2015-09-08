@@ -16,41 +16,46 @@ public final class R {
         public static final int background_compass=0x7f020002;
         public static final int background_light=0x7f020003;
         public static final int bg=0x7f020004;
-        public static final int comp=0x7f020005;
-        public static final int cover=0x7f020006;
-        public static final int degree=0x7f020007;
-        public static final int dev_btn=0x7f020008;
-        public static final int e=0x7f020009;
-        public static final int n=0x7f02000a;
-        public static final int number_0=0x7f02000b;
-        public static final int number_1=0x7f02000c;
-        public static final int number_2=0x7f02000d;
-        public static final int number_3=0x7f02000e;
-        public static final int number_4=0x7f02000f;
-        public static final int number_5=0x7f020010;
-        public static final int number_6=0x7f020011;
-        public static final int number_7=0x7f020012;
-        public static final int number_8=0x7f020013;
-        public static final int number_9=0x7f020014;
-        public static final int prompt=0x7f020015;
-        public static final int s=0x7f020016;
-        public static final int w=0x7f020017;
+        public static final int button=0x7f020005;
+        public static final int comp=0x7f020006;
+        public static final int cover=0x7f020007;
+        public static final int degree=0x7f020008;
+        public static final int dev_btn=0x7f020009;
+        public static final int e=0x7f02000a;
+        public static final int n=0x7f02000b;
+        public static final int number_0=0x7f02000c;
+        public static final int number_1=0x7f02000d;
+        public static final int number_2=0x7f02000e;
+        public static final int number_3=0x7f02000f;
+        public static final int number_4=0x7f020010;
+        public static final int number_5=0x7f020011;
+        public static final int number_6=0x7f020012;
+        public static final int number_7=0x7f020013;
+        public static final int number_8=0x7f020014;
+        public static final int number_9=0x7f020015;
+        public static final int prompt=0x7f020016;
+        public static final int s=0x7f020017;
+        public static final int w=0x7f020018;
     }
     public static final class id {
+        public static final int btn_abtdev=0x7f060001;
         public static final int btn_back=0x7f060000;
-        public static final int btn_dev=0x7f060005;
-        public static final int compass_pointer=0x7f060004;
-        public static final int layout_angle=0x7f060003;
-        public static final int layout_direction=0x7f060002;
-        public static final int location_layout=0x7f060006;
-        public static final int low_accuracy_view=0x7f060008;
-        public static final int textview_location=0x7f060007;
-        public static final int view_compass=0x7f060001;
+        public static final int btn_devapps=0x7f060002;
+        public static final int btn_hidden=0x7f060007;
+        public static final int compass_pointer=0x7f060006;
+        public static final int layout_angle=0x7f060005;
+        public static final int layout_direction=0x7f060004;
+        public static final int location_layout=0x7f060008;
+        public static final int low_accuracy_view=0x7f06000a;
+        public static final int textview_location=0x7f060009;
+        public static final int view_compass=0x7f060003;
     }
     public static final class layout {
-        public static final int activity_dev=0x7f040000;
-        public static final int main=0x7f040001;
-        public static final int transient_notification=0x7f040002;
+        public static final int activity_abtdev=0x7f040000;
+        public static final int activity_devapps=0x7f040001;
+        public static final int activity_hidden=0x7f040002;
+        public static final int main=0x7f040003;
+        public static final int transient_notification=0x7f040004;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

@@ -47,10 +47,39 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.raja.compass.DevActivity"
+            android:name="com.raja.compass.HiddenActivity"
             android:label="@string/app_label"
+            android:parentActivityName="com.raja.compass.CompassActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompassActivity" />
+        </activity>
+        <activity
+            android:name="com.raja.compass.AboutDevActivity"
+            android:label="@string/app_label"
+            android:parentActivityName="com.raja.compass.CompassActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@android:style/Theme.NoTitleBar" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompassActivity" />
+        </activity>
+        <activity
+            android:name="com.raja.compass.DevAppsActivity"
+            android:label="@string/app_label"
+            android:parentActivityName="com.raja.compass.CompassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompassActivity" />
+        </activity>
     </application>
 
 </manifest>

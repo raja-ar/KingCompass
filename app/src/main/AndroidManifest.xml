@@ -25,6 +25,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_label"
         android:taskAffinity="com.raja.compass" >
+
         <activity
             android:label="@string/app_label"
             android:name=".CompassActivity"
@@ -39,11 +40,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DevActivity"
+
+        <activity
+            android:name=".HiddenActivity"
+            android:label="@string/app_label"
+            android:parentActivityName=".CompassActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompassActivity" />
+        </activity>
+
+        <activity android:name=".AboutDevActivity"
             android:label="@string/app_label"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar"/>
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:parentActivityName=".CompassActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompassActivity" />
+        </activity>
 
+
+        <activity android:name=".DevAppsActivity"
+            android:label="@string/app_label"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:parentActivityName=".CompassActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CompassActivity" />
+        </activity>
     </application>
 
 </manifest>

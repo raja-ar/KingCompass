@@ -53,7 +53,7 @@ public class CompassActivity extends Activity {
     private AccelerateInterpolator mInterpolator;
     protected final Handler mHandler = new Handler();
     private boolean mStopDrawing;
-    public Button dev;
+    public Button hidden;
 
     View mCompassView;
     CompassView mPointer;
@@ -102,12 +102,12 @@ public class CompassActivity extends Activity {
         initResources();
         initServices();
 
-        dev= (Button) findViewById(R.id.btn_dev);
-        dev.setOnClickListener(myhandler);
+        hidden= (Button) findViewById(R.id.btn_hidden);
+        hidden.setOnClickListener(myhandler);
     }
     View.OnClickListener myhandler = new View.OnClickListener() {
         public void onClick(View v) {
-            Intent intent = new Intent(CompassActivity.this,DevActivity.class);
+            Intent intent = new Intent(CompassActivity.this,HiddenActivity.class);
             startActivity(intent);
         }
     };
