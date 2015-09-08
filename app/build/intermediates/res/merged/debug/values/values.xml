@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_label">King Compass</string>
+    <string name="cannot_get_location">Cannot get your location</string>
+    <string name="getting_location">Getting location…</string>
+    <string name="location_east">%s E</string>
+    <string name="location_north">%s N</string>
+    <string name="location_south">%s S</string>
+    <string name="location_west">%s W</string>
+</resources>
