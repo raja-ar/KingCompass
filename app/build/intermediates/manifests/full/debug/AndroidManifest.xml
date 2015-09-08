@@ -34,12 +34,7 @@
             android:name="com.raja.compass.CompassActivity"
             android:label="@string/app_label"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,39 +42,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.raja.compass.HiddenActivity"
+            android:name="com.raja.compass.DevActivity"
             android:label="@string/app_label"
-            android:parentActivityName="com.raja.compass.CompassActivity" >
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
+            android:screenOrientation="portrait"
+            android:theme="@style/Toolbar1" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".CompassActivity" />
         </activity>
         <activity
-            android:name="com.raja.compass.AboutDevActivity"
-            android:label="@string/app_label"
-            android:parentActivityName="com.raja.compass.CompassActivity"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CompassActivity" />
-        </activity>
-        <activity
-            android:name="com.raja.compass.DevAppsActivity"
-            android:label="@string/app_label"
-            android:parentActivityName="com.raja.compass.CompassActivity"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CompassActivity" />
-        </activity>
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
     </application>
 
 </manifest>

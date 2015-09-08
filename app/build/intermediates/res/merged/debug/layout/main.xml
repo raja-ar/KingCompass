@@ -110,7 +110,7 @@
                             android:layout_height="50dp"
                             android:layout_gravity="center"
                             android:background="@drawable/dev_btn"
-                            android:id="@+id/btn_hidden"
+                            android:id="@+id/btn_dev"
 
                             />
                     </FrameLayout>

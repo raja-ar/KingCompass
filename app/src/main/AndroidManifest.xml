@@ -13,8 +13,7 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
-  -->
-
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.raja.compass" >
 
@@ -25,54 +24,27 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_label"
         android:taskAffinity="com.raja.compass" >
-
         <activity
-            android:label="@string/app_label"
             android:name=".CompassActivity"
+            android:label="@string/app_label"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-            <intent-filter >
+            android:theme="@style/AppTheme" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter >
-                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".HiddenActivity"
-            android:label="@string/app_label"
-            android:parentActivityName=".CompassActivity" >
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CompassActivity" />
-        </activity>
-
-        <activity android:name=".AboutDevActivity"
+            android:name=".DevActivity"
             android:label="@string/app_label"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:parentActivityName=".CompassActivity" >
-            <!-- Parent activity meta-data to support 4.0 and lower -->
+            android:theme="@style/Toolbar1" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".CompassActivity" />
         </activity>
 
-
-        <activity android:name=".DevAppsActivity"
-            android:label="@string/app_label"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:parentActivityName=".CompassActivity" >
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CompassActivity" />
-        </activity>
     </application>
 
 </manifest>
