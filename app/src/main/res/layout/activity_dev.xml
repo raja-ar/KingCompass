@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_below="@id/anchor"
                 android:layout_height="250dp"
-                android:background="@drawable/app_2"
+                android:background="@drawable/iapp_1"
                 android:id="@+id/app1"
 
                 android:paddingBottom="@dimen/activity_vertical_margin"
@@ -40,7 +40,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/app_1"
+                android:background="@drawable/iapp_2"
                 android:layout_below="@id/app1"
                 android:id="@+id/app2"
 
@@ -51,7 +51,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/app_3"
+                android:background="@drawable/iapp_3"
                 android:layout_below="@id/app2"
                 android:id="@+id/app3"
 
@@ -62,7 +62,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/app_4"
+                android:background="@drawable/iapp_4"
                 android:layout_below="@id/app3"
                 android:id="@+id/app4"
 
