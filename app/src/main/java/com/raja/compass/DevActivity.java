@@ -29,9 +29,8 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
 
-
-        ImageView imageView = (ImageView) findViewById(R.id.a);
-        imageView.setImageResource(R.drawable.c);
+        ImageView imageView = (ImageView) findViewById(R.id.app1);
+        imageView.setImageResource(R.drawable.app_2);
 
 
         mImageView = findViewById(R.id.image);
@@ -47,7 +46,7 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
 
             @Override
             public void onClick(View arg0) {
-                Toast.makeText(getApplicationContext(), "Clicked c Image",
+                Toast.makeText(getApplicationContext(), "Clicked 1st Image",
                         Toast.LENGTH_SHORT).show();
             }
         });

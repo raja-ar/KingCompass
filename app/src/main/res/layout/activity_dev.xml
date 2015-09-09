@@ -28,33 +28,10 @@
                 android:minHeight="@dimen/parallax_image_height" />
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:background="@drawable/button"
                 android:layout_below="@id/anchor"
-                android:visibility="invisible"
-                android:id="@+id/header"
-                android:layout_marginTop="25dp"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/c"
-                android:layout_below="@id/header"
-                android:id="@+id/a"
-                android:layout_marginTop="25dp"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/a"
-                android:layout_below="@id/a"
-                android:id="@+id/b"
+                android:layout_height="250dp"
+                android:background="@drawable/app_2"
+                android:id="@+id/app1"
 
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -62,10 +39,10 @@
                 android:paddingTop="@dimen/activity_vertical_margin"/>
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/a"
-                android:layout_below="@id/b"
-                android:id="@+id/c"
+                android:layout_height="250dp"
+                android:background="@drawable/app_1"
+                android:layout_below="@id/app1"
+                android:id="@+id/app2"
 
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -73,10 +50,21 @@
                 android:paddingTop="@dimen/activity_vertical_margin"/>
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/a"
-                android:layout_below="@id/c"
-                android:id="@+id/d"
+                android:layout_height="250dp"
+                android:background="@drawable/app_3"
+                android:layout_below="@id/app2"
+                android:id="@+id/app3"
+
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/app_4"
+                android:layout_below="@id/app3"
+                android:id="@+id/app4"
 
                 android:paddingBottom="@dimen/activity_vertical_margin"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
