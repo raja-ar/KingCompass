@@ -13,8 +13,7 @@
   ~   See the License for the specific language governing permissions and
   ~   limitations under the License.
   -->
-<View xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="@drawable/gradient_header_background"
-    android:minHeight="?attr/actionBarSize" />
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="parallax_image_height">350dp</dimen>
+</resources>

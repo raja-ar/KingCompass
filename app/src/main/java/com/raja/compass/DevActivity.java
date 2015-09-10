@@ -1,3 +1,19 @@
+/*
+ * Copyright 2015 Azmeer Raja
+ *
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
+ */
+
 package com.raja.compass;
 
 import android.annotation.TargetApi;
@@ -9,7 +25,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
@@ -35,17 +50,17 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         ImageView app1 = (ImageView) findViewById(R.id.app1);
         ImageView app2 = (ImageView) findViewById(R.id.app2);
         ImageView app3 = (ImageView) findViewById(R.id.app3);
-        ImageView app4 = (ImageView) findViewById(R.id.app4);
+
         // Set What To Show in The Imageview
         app1.setImageResource(R.drawable.iapp_1);
         app2.setImageResource(R.drawable.iapp_2);
         app3.setImageResource(R.drawable.iapp_3);
-        app4.setImageResource(R.drawable.iapp_4);
+
         //Set On CLick Listeners
         app1.setOnClickListener(this);
         app2.setOnClickListener(this);
         app3.setOnClickListener(this);
-        app4.setOnClickListener(this);
+
 
         mImageView = findViewById(R.id.image);
         mToolbarView = findViewById(R.id.toolbar);
@@ -88,9 +103,8 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.app1: {
-                Toast.makeText(getApplicationContext(), "Clicked 1st Image",
-                        Toast.LENGTH_SHORT).show();
-                //final String appPackageName = getPackageName(); // getPackageName() from Context or Activity object
+
+
                 try {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.android.maari")));
                 } catch (android.content.ActivityNotFoundException anfe) {
@@ -99,23 +113,25 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             }
             break;
             case R.id.app2: {
-                Toast.makeText(getApplicationContext(), "Clicked 2nd Image",
-                        Toast.LENGTH_SHORT).show();
+               try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.knowme")));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.raja.knowme")));
+                }
             }
             break;
             case R.id.app3: {
-                Toast.makeText(getApplicationContext(), "Clicked 3rd Image",
-                        Toast.LENGTH_SHORT).show();
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.compass")));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.raja.compass")));
+                }
             }
             break;
-            case R.id.app4: {
-                Toast.makeText(getApplicationContext(), "Clicked 4th Image",
-                        Toast.LENGTH_SHORT).show();
-            }
-            break;
+
 
         }
     }
 
-}
+   }
 

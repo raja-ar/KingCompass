@@ -66,8 +66,8 @@
     <color name="material_grey_900">#ff212121</color>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="primary">#009688</color>
-    <color name="primaryDark">#00796b</color>
+    <color name="primary">#ff6600</color>
+    <color name="primaryDark">#b44901</color>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -176,12 +176,6 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/src/main/res/values/dimens.xml -->
-    <eat-comment/>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
-    <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
     <item name="dialog_fixed_width_major" type="dimen">320dp</item>
@@ -195,36 +189,17 @@
     <dimen name="fab_shadow_size">12dp</dimen>
     <dimen name="fab_size_mini">40dp</dimen>
     <dimen name="fab_size_normal">56dp</dimen>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/src/main/res/values/dimens.xml -->
-    <eat-comment/>
-    <dimen name="flexible_space_height">72dp</dimen>
-    <dimen name="flexible_space_image_height">240dp</dimen>
-    <dimen name="flexible_space_show_fab_offset">120dp</dimen>
-    <dimen name="header_bar_height">72dp</dimen>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/src/main/res/values/dimens.xml -->
-    <eat-comment/>
-    <dimen name="intersection_height">16dp</dimen>
-    <dimen name="margin_extra_short">4dp</dimen>
-    <dimen name="margin_short">8dp</dimen>
-    <dimen name="margin_standard">16dp</dimen>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
-    <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="parallax_image_height">350dp</dimen>
-    <dimen name="sliding_overlay_blur_size">4dp</dimen>
-    <dimen name="sliding_slop">32dp</dimen>
-    <dimen name="tab_height">48dp</dimen>
-    <dimen name="toolbar_elevation">4dp</dimen>
-    <dimen name="toolbar_margin_start">72dp</dimen>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
