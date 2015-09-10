@@ -16,4 +16,7 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="parallax_image_height">350dp</dimen>
+  <dimen name="dev_textsize">40sp</dimen>
+  <dimen name="dev_namesize">50sp</dimen>
+  <dimen name="dev_margintop">100dp</dimen>
 </resources>

@@ -40,8 +40,8 @@
     android:layout_height="wrap_content"
     android:text="Apps Developed"
     android:id="@+id/developer"
-    android:textSize="40sp"
-    android:layout_marginTop="100dp"
+    android:textSize="@dimen/dev_textsize"
+    android:layout_marginTop="@dimen/dev_margintop"
     android:layout_centerHorizontal="true"
     android:layout_alignTop="@+id/image"
      />
@@ -52,7 +52,7 @@
             android:layout_below="@+id/developer"
             android:id="@+id/by"
 
-            android:textSize="40sp"
+            android:textSize="@dimen/dev_textsize"
             android:layout_centerHorizontal="true" />
             <TextView
                 android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
                 android:layout_below="@+id/by"
 android:id="@+id/raaja"
 
-                android:textSize="50sp"
+                android:textSize="@dimen/dev_namesize"
                 android:layout_centerHorizontal="true" />
 
             <View

@@ -176,6 +176,13 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="dev_margintop">100dp</dimen>
+    <dimen name="dev_namesize">50sp</dimen>
+    <dimen name="dev_textsize">40sp</dimen>
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/KingCompass/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
+    <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
     <item name="dialog_fixed_width_major" type="dimen">320dp</item>

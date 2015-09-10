@@ -14,5 +14,8 @@
   ~   limitations under the License.
   -->
 <resources>
-    <dimen name="parallax_image_height">350dp</dimen>
+    <dimen name="parallax_image_height">500dp</dimen>
+  <dimen name="dev_textsize">50sp</dimen>
+  <dimen name="dev_namesize">60sp</dimen>
+  <dimen name="dev_margintop">200dp</dimen>
 </resources>
