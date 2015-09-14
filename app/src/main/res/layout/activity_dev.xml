@@ -97,6 +97,15 @@ android:id="@+id/raaja"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iapp_4"
+                android:layout_below="@id/app3"
+                android:id="@+id/app4"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
 
 
               </RelativeLayout>

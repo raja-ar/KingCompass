@@ -50,17 +50,18 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         ImageView app1 = (ImageView) findViewById(R.id.app1);
         ImageView app2 = (ImageView) findViewById(R.id.app2);
         ImageView app3 = (ImageView) findViewById(R.id.app3);
-
+        ImageView app4 = (ImageView) findViewById(R.id.app4);
         // Set What To Show in The Imageview
         app1.setImageResource(R.drawable.iapp_1);
         app2.setImageResource(R.drawable.iapp_2);
         app3.setImageResource(R.drawable.iapp_3);
+        app4.setImageResource(R.drawable.iapp_4);
 
         //Set On CLick Listeners
         app1.setOnClickListener(this);
         app2.setOnClickListener(this);
         app3.setOnClickListener(this);
-
+        app4.setOnClickListener(this);
 
         mImageView = findViewById(R.id.image);
         mToolbarView = findViewById(R.id.toolbar);
@@ -128,7 +129,14 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
                 }
             }
             break;
+            case R.id.app4:{
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=com.TronAr")));
+                    } catch (android.content.ActivityNotFoundException anfe){
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.TronAr")));
+                }
 
+            }
 
         }
     }
