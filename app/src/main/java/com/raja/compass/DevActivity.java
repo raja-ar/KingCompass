@@ -131,9 +131,9 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             break;
             case R.id.app4:{
                 try {
-                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=com.TronAr")));
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=com.RaceAr")));
                     } catch (android.content.ActivityNotFoundException anfe){
-                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.TronAr")));
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.RaceAr")));
                 }
 
             }
