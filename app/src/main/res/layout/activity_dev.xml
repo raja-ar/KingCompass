@@ -35,85 +35,83 @@
                 android:layout_height="@dimen/parallax_image_height"
                 android:scaleType="centerCrop"
                 android:src="@drawable/bg2"/>
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Apps Developed"
-    android:id="@+id/developer"
-    android:textSize="@dimen/dev_textsize"
-    android:layout_marginTop="@dimen/dev_margintop"
-    android:layout_centerHorizontal="true"
-    android:layout_alignTop="@+id/image"
-     />
             <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="By"
-            android:layout_below="@+id/developer"
-            android:id="@+id/by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apps Developed"
+                android:id="@+id/developer"
+                android:textSize="@dimen/dev_textsize"
+                android:layout_marginTop="@dimen/dev_margintop"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/image"
+                android:textColor="#fb0071" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By"
+                android:layout_below="@+id/developer"
+                android:id="@+id/by"
 
-            android:textSize="@dimen/dev_textsize"
-            android:layout_centerHorizontal="true" />
+                android:textSize="@dimen/dev_textsize"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fb0071" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Raaja Ar"
                 android:layout_below="@+id/by"
-android:id="@+id/raaja"
+                android:id="@+id/raaja"
 
                 android:textSize="@dimen/dev_namesize"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:textColor="#008efb" />
 
             <View
                 android:id="@+id/anchor"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/parallax_image_height"
                 android:minHeight="@dimen/parallax_image_height" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_below="@id/anchor"
                 android:layout_height="wrap_content"
-                android:src="@drawable/iapp_1"
-                android:id="@+id/app1"
+                android:src="@drawable/maari"
+                android:id="@+id/maari"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
+                />
 
-               />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/iapp_2"
-                android:layout_below="@id/app1"
-                android:id="@+id/app2"
+                android:src="@drawable/knowme"
+                android:layout_below="@id/maari"
+                android:id="@+id/knowme"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/iapp_3"
-                android:layout_below="@id/app2"
-                android:id="@+id/app3"
+                android:src="@drawable/kingcompass"
+                android:layout_below="@id/knowme"
+                android:id="@+id/kingcompass"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/iapp_4"
-                android:layout_below="@id/app3"
-                android:id="@+id/app4"
+                android:src="@drawable/racear"
+                android:layout_below="@id/kingcompass"
+                android:id="@+id/racear"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
-
-
-              </RelativeLayout>
-
+        </RelativeLayout>
     </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
-
     <include layout="@layout/gradient_header" />
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"

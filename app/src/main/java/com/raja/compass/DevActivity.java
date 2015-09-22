@@ -84,7 +84,7 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public void onScrollChanged(int scrollY, boolean firstScroll, boolean dragging) {
-       int baseColor = getResources().getColor(R.color.primary);
+        int baseColor = getResources().getColor(R.color.primary);
         float alpha = Math.min(1, (float) scrollY / mParallaxImageHeight);
         mToolbarView.setBackgroundColor(ScrollUtils.getColorWithAlpha(alpha, baseColor));
         ViewHelper.setTranslationY(mImageView, scrollY / 2);
@@ -114,7 +114,7 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             }
             break;
             case R.id.app2: {
-               try {
+                try {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.knowme")));
                 } catch (android.content.ActivityNotFoundException anfe) {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.raja.knowme")));
@@ -131,9 +131,9 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             break;
             case R.id.app4:{
                 try {
-                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=com.RaceAr")));
-                    } catch (android.content.ActivityNotFoundException anfe){
-                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.RaceAr")));
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=com.raja.tronar")));
+                } catch (android.content.ActivityNotFoundException anfe){
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.raja.tronar")));
                 }
 
             }
@@ -141,5 +141,5 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         }
     }
 
-   }
+}
 
