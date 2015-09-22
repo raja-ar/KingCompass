@@ -18,6 +18,9 @@ package com.raja.compass;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -47,21 +50,120 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
         //Set and Define Imageviews id
-        ImageView app1 = (ImageView) findViewById(R.id.app1);
-        ImageView app2 = (ImageView) findViewById(R.id.app2);
-        ImageView app3 = (ImageView) findViewById(R.id.app3);
-        ImageView app4 = (ImageView) findViewById(R.id.app4);
-        // Set What To Show in The Imageview
-        app1.setImageResource(R.drawable.iapp_1);
-        app2.setImageResource(R.drawable.iapp_2);
-        app3.setImageResource(R.drawable.iapp_3);
-        app4.setImageResource(R.drawable.iapp_4);
+        ImageView maari = (ImageView) findViewById(R.id.maari);
+        ImageView knowme = (ImageView) findViewById(R.id.knowme);
+        ImageView kingcompass = (ImageView) findViewById(R.id.kingcompass);
+        ImageView racear = (ImageView) findViewById(R.id.racear);
+
+
+ /*                 Multiple Screen Size Condition             */
+
+        // Small Size
+
+        if ((getApplicationContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_SMALL)
+        {
+            //Toast.makeText(getApplication(), "small", Toast.LENGTH_SHORT).show();
+
+            BitmapFactory.Options options=new BitmapFactory.Options();
+            options.inSampleSize=5;
+
+            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
+            maari.setImageBitmap(bm_maari);
+            Bitmap bm_knowme=BitmapFactory.decodeResource(getResources(),R.drawable.knowme,options);
+            knowme.setImageBitmap(bm_knowme);
+            Bitmap bm_compass=BitmapFactory.decodeResource(getResources(),R.drawable.kingcompass,options);
+            kingcompass.setImageBitmap(bm_compass);
+            Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
+            racear.setImageBitmap(bm_race);
+
+        }
+
+        //Normal Size
+
+        else if ((getApplicationContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_NORMAL)
+        {
+            // Toast.makeText(getApplication(),"normal" , Toast.LENGTH_SHORT).show();
+            BitmapFactory.Options options=new BitmapFactory.Options();
+            options.inSampleSize=3;
+
+            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
+            maari.setImageBitmap(bm_maari);
+            Bitmap bm_knowme=BitmapFactory.decodeResource(getResources(),R.drawable.knowme,options);
+            knowme.setImageBitmap(bm_knowme);
+            Bitmap bm_compass=BitmapFactory.decodeResource(getResources(),R.drawable.kingcompass,options);
+            kingcompass.setImageBitmap(bm_compass);
+            Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
+            racear.setImageBitmap(bm_race);
+        }
+
+        // Large Size
+
+        else if ((getApplicationContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE)
+        {
+            // Toast.makeText(getApplication(),"large" , Toast.LENGTH_SHORT).show();
+            BitmapFactory.Options options=new BitmapFactory.Options();
+            options.inSampleSize=2;
+
+            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
+            maari.setImageBitmap(bm_maari);
+            Bitmap bm_knowme=BitmapFactory.decodeResource(getResources(),R.drawable.knowme,options);
+            knowme.setImageBitmap(bm_knowme);
+            Bitmap bm_compass=BitmapFactory.decodeResource(getResources(),R.drawable.kingcompass,options);
+            kingcompass.setImageBitmap(bm_compass);
+            Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
+            racear.setImageBitmap(bm_race);
+
+        }
+
+        //X-large Size
+
+        else if ((getApplicationContext().getResources().getConfiguration().screenLayout &
+                Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_XLARGE)
+        {
+            // Toast.makeText(getApplication(),"xlarge" , Toast.LENGTH_SHORT).show();
+
+            // Set What To Show in The Imageview
+            maari.setImageResource(R.drawable.maari);
+            knowme.setImageResource(R.drawable.knowme);
+            kingcompass.setImageResource(R.drawable.kingcompass);
+            racear.setImageResource(R.drawable.racear);
+
+        }
+
+        //Undefined Size
+
+        else
+        {
+            // Toast.makeText(getApplication(), "undefined", Toast.LENGTH_SHORT).show();
+            BitmapFactory.Options options=new BitmapFactory.Options();
+            options.inSampleSize=4;
+
+            Bitmap bm_maari=BitmapFactory.decodeResource(getResources(),R.drawable.maari,options);
+            maari.setImageBitmap(bm_maari);
+            Bitmap bm_knowme=BitmapFactory.decodeResource(getResources(),R.drawable.knowme,options);
+            knowme.setImageBitmap(bm_knowme);
+            Bitmap bm_compass=BitmapFactory.decodeResource(getResources(),R.drawable.kingcompass,options);
+            kingcompass.setImageBitmap(bm_compass);
+            Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
+            racear.setImageBitmap(bm_race);
+
+        }
+
+
+
 
         //Set On CLick Listeners
-        app1.setOnClickListener(this);
-        app2.setOnClickListener(this);
-        app3.setOnClickListener(this);
-        app4.setOnClickListener(this);
+        maari.setOnClickListener(this);
+        knowme.setOnClickListener(this);
+        kingcompass.setOnClickListener(this);
+        racear.setOnClickListener(this);
+
+
+
+
 
         mImageView = findViewById(R.id.image);
         mToolbarView = findViewById(R.id.toolbar);
@@ -74,6 +176,8 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
 
 
     }
+
+
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -103,7 +207,7 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.app1: {
+            case R.id.maari: {
 
 
                 try {
@@ -113,7 +217,9 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
                 }
             }
             break;
-            case R.id.app2: {
+            case R.id.knowme: {
+
+
                 try {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.knowme")));
                 } catch (android.content.ActivityNotFoundException anfe) {
@@ -121,7 +227,8 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
                 }
             }
             break;
-            case R.id.app3: {
+            case R.id.kingcompass: {
+
                 try {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.raja.compass")));
                 } catch (android.content.ActivityNotFoundException anfe) {
@@ -129,11 +236,12 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
                 }
             }
             break;
-            case R.id.app4:{
+            case R.id.racear:{
+
                 try {
-                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=com.raja.tronar")));
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id=com.raja.RaceAr")));
                 } catch (android.content.ActivityNotFoundException anfe){
-                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.raja.tronar")));
+                    startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.raja.RaceAr")));
                 }
 
             }
