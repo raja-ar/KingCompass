@@ -35,59 +35,26 @@
                 android:layout_height="@dimen/parallax_image_height"
                 android:scaleType="centerCrop"
                 android:src="@drawable/bg2"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Apps Developed"
-                android:id="@+id/developer"
-                android:textSize="@dimen/dev_textsize"
-                android:layout_marginTop="@dimen/dev_margintop"
-                android:layout_centerHorizontal="true"
-                android:layout_alignTop="@+id/image"
-                android:textColor="#fb0071" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="By"
-                android:layout_below="@+id/developer"
-                android:id="@+id/by"
-
-                android:textSize="@dimen/dev_textsize"
-                android:layout_centerHorizontal="true"
-                android:textColor="#fb0071" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Raaja Ar"
-                android:layout_below="@+id/by"
-                android:id="@+id/raaja"
-
-                android:textSize="@dimen/dev_namesize"
-                android:layout_centerHorizontal="true"
-                android:textColor="#008efb" />
-
-            <View
+               <View
                 android:id="@+id/anchor"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/parallax_image_height"
-                android:minHeight="@dimen/parallax_image_height" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_below="@id/anchor"
-                android:layout_height="wrap_content"
-                android:src="@drawable/maari"
-                android:id="@+id/maari"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                />
+                android:layout_height="wrap_content" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/knowme"
-                android:layout_below="@id/maari"
+                android:layout_below="@id/anchor"
                 android:id="@+id/knowme"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
+                        <ImageView
+                android:layout_width="match_parent"
+                android:layout_below="@id/knowme"
+                android:layout_height="wrap_content"
+                android:src="@drawable/maari"
+                android:id="@+id/maari"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
@@ -95,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/kingcompass"
-                android:layout_below="@id/knowme"
+                android:layout_below="@id/maari"
                 android:id="@+id/kingcompass"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
@@ -106,6 +73,15 @@
                 android:src="@drawable/racear"
                 android:layout_below="@id/kingcompass"
                 android:id="@+id/racear"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fotoar"
+                android:layout_below="@id/racear"
+                android:id="@+id/fotoar"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />

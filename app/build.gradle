@@ -24,8 +24,8 @@ android {
         applicationId "com.raja.compass"
         minSdkVersion 9
         targetSdkVersion 23
-        versionCode 103
-        versionName '1.0.3'
+        versionCode 200
+        versionName '2.0.0'
     }
 
     buildTypes {
